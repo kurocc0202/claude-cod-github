@@ -35,6 +35,21 @@
 **不得記錄**屋主姓名、電話、Email、社群帳號、私人社團成員、住戶群組名單或個人房產持有資料。
 訊號只用來判斷生活圈的交屋時機與需求熱度。
 
+## Meta Ads MCP(讓 Claude 直接讀寫廣告帳戶)
+
+repo 根目錄的 `.mcp.json` 已設定 `meta-ads` 這個 MCP server(`meta-ads-mcp` 1.0.120,
+37 個工具:讀取帳戶/活動/廣告組/廣告/洞察、建立與更新活動/廣告組/廣告、搜尋興趣與地理位置、
+估算受眾規模)。它只從環境變數 `META_ACCESS_TOKEN` 拿授權,token 不會進到 repo。
+
+啟用方式:
+
+1. 到 claude.ai/code 的環境設定(Environment → Environment variables),新增
+   `META_ACCESS_TOKEN` = 你的 Meta 長效 token(需要 `ads_read`;要改設定則需 `ads_management`)。
+2. 用這個 repo 開一個**新的** session,啟動時同意載入 `.mcp.json` 裡的 `meta-ads` server。
+3. 對 Claude 說「列出我的廣告帳戶」確認接通。
+
+沒有設 `META_ACCESS_TOKEN` 時 server 仍會啟動,但每個工具都會回「未授權」。
+
 ## 執行
 
 ```bash

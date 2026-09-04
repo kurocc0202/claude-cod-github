@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "meta-ads": {
+      "command": "uvx",
+      "args": ["--from", "meta-ads-mcp==1.0.120", "meta-ads-mcp", "--transport", "stdio"],
+      "env": {
+        "META_ACCESS_TOKEN": "${META_ACCESS_TOKEN}",
+        "META_ADS_DISABLE_CALLBACK_SERVER": "1",
+        "META_ADS_DISABLE_LOGIN_LINK": "1"
+      }
+    }
+  }
+}
