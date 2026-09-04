@@ -76,16 +76,17 @@ GLYPHS = {
         (5.6, 1.4, 16.0, 3.0),      # into the right post
     ],
     "造": [
-        (8.4, 13.2, 10.2, 16.0),    # 告 top stub
-        (5.6, 11.8, 13.6, 13.4),
-        (8.4, 9.0, 10.2, 13.4),
-        (4.6, 7.6, 14.8, 9.2),      # 告 long horizontal, into the right post
-        (6.4, 2.6, 8.0, 7.8),       # 口 sides reach down onto the 辶 sweep
-        (12.0, 2.6, 13.6, 7.8),
-        (6.4, 3.6, 13.6, 5.2),
-        (1.0, 13.0, 2.8, 15.0),     # 辶 dot, into the left post
-        (1.0, 8.0, 3.0, 11.6),      # 辶 stem, into the left post
-        (0.0, 1.0, 15.0, 2.8),      # 辶 sweep, clear of 口 above
+        (0.0, 13.4, 2.2, 15.2),     # 辶 dot
+        (0.0, 1.8, 1.8, 12.2),      # 辶 stem, continuous down into the sweep
+        (0.0, 0.0, 16.0, 2.0),      # 辶 sweep, straight onto the floor
+        (7.6, 12.8, 9.4, 16.0),     # 告 top stroke, up into the rim
+        (5.4, 11.4, 13.8, 13.0),
+        (8.6, 8.0, 10.4, 13.0),     # 告 vertical
+        (4.4, 8.0, 16.0, 9.6),      # 告 long horizontal, into the right post
+        (7.0, 5.4, 13.0, 7.0),      # 口, sitting on the 辶 sweep
+        (7.0, 1.8, 8.6, 7.0),
+        (11.4, 1.8, 13.0, 7.0),
+        (7.0, 1.8, 13.0, 3.4),
     ],
 }
 
