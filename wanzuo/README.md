@@ -43,6 +43,8 @@ repo 根目錄的 `.mcp.json` 已設定 `meta-ads` 這個 MCP server(`meta-ads-m
 
 啟用方式:
 
+0. 環境的網路政策必須允許連到 `graph.facebook.com`(預設的受限政策會擋掉,CONNECT 回 403)。
+   到 claude.ai/code 的環境設定把網路改成允許該網域或不受限。
 1. 到 claude.ai/code 的環境設定(Environment → Environment variables),新增
    `META_ACCESS_TOKEN` = 你的 Meta 長效 token(需要 `ads_read`;要改設定則需 `ads_management`)。
 2. 用這個 repo 開一個**新的** session,啟動時同意載入 `.mcp.json` 裡的 `meta-ads` server。
